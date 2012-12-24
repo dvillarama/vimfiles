@@ -51,6 +51,8 @@ Bundle 'bbommarito/vim-slim.git'
 Bundle 'Lokaltog/vim-powerline.git'
 Bundle 'vim-scripts/FuzzyFinder.git'
 Bundle 'vim-scripts/L9.git'
+Bundle 'benmills/vimux'
+Bundle 'jgdavey/vim-turbux'
 
 filetype plugin indent on
 

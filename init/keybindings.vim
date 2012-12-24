@@ -17,6 +17,18 @@ map <leader>v   :vsp<CR>
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
 
+
+" Move between screens
+" Map ctrl-movement keys to window switching
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+" map <leader>h   ^Wh
+" map <leader>l   ^Wl
+" map <leader>j   ^Wj
+" map <leader>k   ^Wk
+
 " Reload .vimrc
 map <leader>rv  :source ~/.vimrc<CR>
 

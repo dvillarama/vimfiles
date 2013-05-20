@@ -24,6 +24,10 @@ else
   set listchars=trail:~
 endif
 
+" Speed up vi when there are long lines by limiting syntax highlighting to
+" first 120 columns
+  set synmaxcol=180
+
 " Visual Cues
   set showmatch                                      " show matching brackets
   set mat=5                                          " how many tenths of a second to blink matching brackets for

@@ -53,6 +53,8 @@ Bundle 'vim-scripts/FuzzyFinder.git'
 Bundle 'vim-scripts/L9.git'
 Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
+Bundle 'ctrlp.vim'
+Bundle 'sjl/vitality.vim'
 
 filetype plugin indent on
 

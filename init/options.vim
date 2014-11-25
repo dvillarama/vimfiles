@@ -6,6 +6,7 @@
   set notimeout                   " No command timeout
   set showcmd                     " Show typed command prefixes while waiting for operator
   set mouse=a                     " Use mouse support in XTerm/iTerm.
+  set colorcolumn=120
 
 " General Options
   set number                     " Line numbers
@@ -100,8 +101,6 @@ endif
   set isk+=_,$,@,%,#,-              " none of these should be word dividers, so make them not be
   set wildignore+=.git,*.o,tmp/**,vendor/rails/**
   set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
-  set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
-
 " Vim UI
   set lsp=0                            " space it out a little more (easier to read)
   set wildmenu                         " turn on wild menu
@@ -141,3 +140,7 @@ endif
 
 " Use shell in vim (sources rvm)
   set shell=/bin/sh
+
+" CtrlP Mappings
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>

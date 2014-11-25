@@ -6,3 +6,5 @@
 
 set background=dark
 silent! colorscheme solarized
+
+:highlight Pmenu ctermbg=238 gui=bold

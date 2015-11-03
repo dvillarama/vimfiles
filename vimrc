@@ -1,63 +1,43 @@
-" ----------
-" Vim Config
-" ----------
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-cucumber.git'
+Plugin 'tpope/vim-haml.git'
+Plugin 'tpope/vim-endwise.git'
+Plugin 'tpope/vim-surround.git'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'tpope/vim-repeat.git'
+Plugin 'pangloss/vim-javascript.git'
+Plugin 'plasticboy/vim-markdown.git'
+Plugin 'ervandew/supertab.git'
+Plugin 'scrooloose/syntastic.git'
+Plugin 'Lokaltog/vim-powerline.git'
+Plugin 'vim-scripts/L9.git'
+Plugin 'benmills/vimux'
+Plugin 'jgdavey/vim-turbux'
+Plugin 'ctrlp.vim'
+Plugin 'sjl/vitality.vim'
+Plugin 'rking/ag.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'chrismccord/bclose.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" filetype plugin on
 "
-" TL;DR
-" Run install.sh to symlink this file to your home directory (e.g. $HOME/.vimrc)
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
-" How this works:
-"
-" This file is minimal.  Most of the vim settings and initialization is in
-" several files in .vim/init.  This makes it easier to find things and to
-" merge between branches and repos.
-"
-" Please do not add configuration to this file, unless it *really* needs to
-" come first or last, like vundle. Instead, add it to one of the files in
-" .vim/init, or create a new one.
-
-set nocompatible                " Don't maintain compatibility with vi
-filetype off
-syntax on
-
-" Vundle stuff
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Bundle 'altercation/vim-colors-solarized.git'
-Bundle 'tpope/vim-fugitive.git'
-Bundle 'tpope/vim-cucumber.git'
-Bundle 'tpope/vim-haml.git'
-Bundle 'tpope/vim-endwise.git'
-Bundle 'tpope/vim-surround.git'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'tpope/vim-repeat.git'
-Bundle 'pangloss/vim-javascript.git'
-Bundle 'plasticboy/vim-markdown.git'
-" Bundle 'ecomba/vim-ruby-refactoring.git'
-" Bundle 'tpope/vim-unimpaired.git'
-" Bundle 'tpope/vim-rake.git'
-" Bundle 'tpope/vim-rails.git'
-" Bundle 'thisivan/vim-taglist.git'
-" Bundle 'godlygeek/tabular.git'
-Bundle 'ervandew/supertab.git'
-" Bundle 'janx/vim-rubytest.git'
-Bundle 'scrooloose/syntastic.git'
-" Bundle 't9md/vim-chef.git'
-" Bundle 'msanders/snipmate.vim.git'
-" Bundle 'kchmck/vim-coffee-script.git'
-" Bundle 'bbommarito/vim-slim.git'
-Bundle 'Lokaltog/vim-powerline.git'
-" Bundle 'vim-scripts/FuzzyFinder.git'
-Bundle 'vim-scripts/L9.git'
-Bundle 'benmills/vimux'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'ctrlp.vim'
-Bundle 'sjl/vitality.vim'
-Bundle 'rking/ag.vim'
-Bundle 'mustache/vim-mustache-handlebars'
-
-filetype plugin indent on
-
-" Source initialization files
 runtime! init/**.vim
+syntax on

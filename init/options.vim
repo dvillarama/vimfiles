@@ -144,3 +144,4 @@ endif
 " CtrlP Mappings
 nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>m ::CtrlPMRU<CR>

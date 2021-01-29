@@ -1,3 +1,4 @@
+
 " GUI Options
   set guifont=Inconsolata:h24
   set guioptions-=T               " Remove GUI toolbar
@@ -6,7 +7,7 @@
   set notimeout                   " No command timeout
   set showcmd                     " Show typed command prefixes while waiting for operator
   set mouse=a                     " Use mouse support in XTerm/iTerm.
-  set colorcolumn=120
+  set colorcolumn=150
 
 " General Options
   set number                     " Line numbers
@@ -40,6 +41,7 @@ endif
   set so=5                                           " Keep x lines (top/bottom) for scope
   set novisualbell                                   " don't blink
   set noerrorbells                                   " no noises
+  set noeb vb t_vb=
   " Statusline from ~1994 => 2011
   " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%05l,%04v][%LL:%p%%]
 
@@ -145,3 +147,7 @@ endif
 nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>m ::CtrlPMRU<CR>
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+highlight Comment cterm=italic
